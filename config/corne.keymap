@@ -58,14 +58,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB               &kp Q  &kp W  &kp E     &kp R             &kp T        &kp Y          &kp U                 &kp I      &kp O    &kp P     &kp MINUS
-&CtrlorTmuxL LCTRL 0  &kp A  &kp S  &kp D     &kp F             &kp G        &kp H          &kp J                 &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT             &kp Z  &kp X  &kp C     &kp V             &kp B        &kp N          &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                    &kp LGUI  &EscNLayer 1 ESC  &kp SPACE    &kp BACKSPACE  &EnterNLayer 2 ENTER  &kp RALT
+&kp TAB            &kp Q        &kp W        &kp E                 &kp R       &kp T          &kp Y            &kp U         &kp I           &kp O             &kp P            &kp MINUS
+&kp LEFT_BRACKET   &kp A        &kp S        &kp D                 &kp F       &kp G          &kp H            &kp J         &kp K           &kp L             &kp SEMI         &kp SQT
+&kp RIGHT_BRACKET  &mt LSHFT Z  &mt LCTRL X  &mt LALT C            &mt LGUI V  &kp B          &kp N            &mt RGUI M    &mt RALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH  &kp EQUAL
+                                             &CtrlorTmuxL LCTRL 0  &lt 3 TAB   &lt 4 SPACE    &lt 2 BACKSPACE  &lt 1 ESCAPE  &kp RGUI
             >;
         };
 
-        symbol_1 {
+        sym {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -80,7 +80,7 @@
             >;
         };
 
-        symbol_2 {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -92,6 +92,33 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        vimnav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        misc {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
