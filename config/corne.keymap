@@ -73,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LEFT_BRACKET   &kp N7        &kp N8        &kp N9        &kp N0       &none   &none          &none     &none      &none      &none
-&trans  &kp RIGHT_BRACKET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL    &none   &none          &none     &none      &none      &none
-&trans  &kp GRAVE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &none   &kp RIGHT_GUI  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-                                         &trans        &trans        &trans       &trans  &trans         &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp N7        &kp N8        &kp N9        &kp N0       &none   &none          &none     &none      &none      &none
+&trans            &kp NON_US_BACKSLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL    &none   &none          &none     &none      &none      &none
+&trans            &kp GRAVE             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &none   &kp RIGHT_GUI  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+                                                      &trans        &trans        &trans       &trans  &trans         &trans
             >;
         };
 
@@ -88,10 +88,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp LEFT_BRACE  &kp RIGHT_BRACE       &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
+&none           &kp NON_US_BACKSLASH  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
+&none           &kp TILDE             &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+                                                       &trans        &trans                &trans                   &trans  &trans    &trans
             >;
         };
 
