@@ -9,17 +9,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    behaviors {
-        CtrlorTmuxL: CtrlorTmuxL {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRLORTMUXL";
-            bindings = <&kp>, <&tmux_leader>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
