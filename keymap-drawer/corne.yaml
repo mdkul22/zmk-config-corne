@@ -14,19 +14,19 @@ layers:
   - P
   - '-'
   - '['
-  - {t: A, h: LSHFT}
+  - A
   - S
   - D
-  - F
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
+  - {t: J, h: RIGHT SHIFT}
   - K
-  - {t: L, h: RSHFT}
+  - ;
   - ;
   - ''''
   - ']'
-  - {t: Z, h: LSHFT}
+  - Z
   - {t: X, h: LCTRL}
   - {t: C, h: LALT}
   - {t: V, h: LGUI}
@@ -35,7 +35,7 @@ layers:
   - {t: M, h: RGUI}
   - {t: ',', h: RALT}
   - {t: ., h: RCTRL}
-  - {t: /, h: RSHFT}
+  - /
   - '='
   - {t: Ctl+ A, h: LCTRL}
   - {t: SPACE, h: vimnav}
