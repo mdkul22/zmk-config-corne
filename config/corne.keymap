@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -20,10 +25,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE          &kp Q        &kp W        &kp E            &kp R       &kp T          &kp Y        &kp U            &kp I           &kp O             &kp P            &kp MINUS
-&kp LEFT_BRACKET   &kp A        &kp S        &kp D            &kp F       &kp G          &kp H        &kp J            &kp K           &kp L             &kp SEMI         &kp SQT
-&kp RIGHT_BRACKET  &mt LSHFT Z  &mt LCTRL X  &mt LALT C       &mt LGUI V  &kp B          &kp N        &mt RGUI M       &mt RALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH  &kp EQUAL
-                                             &mt LCTRL LC(A)  &lt 3 TAB   &lt 4 SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &kp ESCAPE
+&kp GRAVE          &kp Q        &kp W        &kp E            &kp R        &kp T           &kp Y        &kp U            &kp I           &kp O             &kp P            &kp MINUS
+&kp LEFT_BRACKET   &kp A        &kp S        &kp D            &kp F        &kp G           &kp H        &kp J            &kp K           &kp L             &kp SEMI         &kp SQT
+&kp RIGHT_BRACKET  &mt LSHFT Z  &mt LCTRL X  &mt LALT C       &mt LGUI V   &kp B           &kp N        &mt RGUI M       &mt RALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH  &kp EQUAL
+                                             &mt LCTRL LC(A)  &lt 3 SPACE  &lt 4 ESCAPE    &lt 2 ENTER  &lt 1 BACKSPACE  &kp TAB
             >;
         };
 
@@ -50,10 +55,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE       &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
-&none           &kp NON_US_BACKSLASH  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
-&none           &kp TILDE             &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-                                                       &trans        &trans                &trans                   &trans  &trans    &trans
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
+&none           &kp PIPE         &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
+&none           &kp TILDE        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+                                                  &trans        &trans                &trans                   &trans  &trans    &trans
             >;
         };
 
