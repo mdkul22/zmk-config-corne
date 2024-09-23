@@ -65,8 +65,8 @@
         vimnav {
             bindings = <
 &trans  &trans     &trans     &trans    &trans    &trans    &mt LS(V) V            &kp K_UNDO      &kp K_CUT      &kp K_COPY    &kp K_PASTE  &kp K_REDO
-&trans  &trans     &trans     &trans    &trans    &trans    &kp LC(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp LC(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &trans
+&trans  &trans     &trans     &trans    &trans    &trans    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp LS(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &trans
                               &trans    &trans    &trans    &trans                 &trans          &trans
             >;
         };
