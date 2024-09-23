@@ -8,7 +8,38 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+};
+
 / {
+    behaviors {
+        lshif: lshif {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LSHIF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <18 19 20 21 22 23 6 7 8 9 10 18 19 20 21 22 23 30 31 32 33 34 35 11>;
+        };
+
+        rshif: rshif {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RSHIF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,14 +51,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE          &kp Q        &kp W        &kp E            &kp R       &kp T          &kp Y        &kp U            &kp I           &kp O             &kp P            &kp MINUS
-&kp LEFT_BRACKET   &kp A        &kp S        &kp D            &kp F       &kp G          &kp H        &kp J            &kp K           &kp L             &kp SEMI         &kp SQT
-&kp RIGHT_BRACKET  &mt LSHFT Z  &mt LCTRL X  &mt LALT C       &mt LGUI V  &kp B          &kp N        &mt RGUI M       &mt RALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH  &kp EQUAL
-                                             &mt LCTRL LC(A)  &lt 3 TAB   &lt 4 SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &kp ESCAPE
+&kp GRAVE          &kp Q           &kp W        &kp E            &kp R        &kp T           &kp Y        &kp U            &kp I           &kp O             &kp P            &kp MINUS
+&kp LEFT_BRACKET   &lshif LSHFT A  &kp S        &kp D            &kp F        &kp G           &kp H        &kp J            &kp K           &rshif RSHFT L    &kp SEMI         &kp SQT
+&kp RIGHT_BRACKET  &mt LSHFT Z     &mt LCTRL X  &mt LALT C       &mt LGUI V   &kp B           &kp N        &mt RGUI M       &mt RALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH  &kp EQUAL
+                                                &mt LCTRL LC(A)  &lt 3 SPACE  &lt 4 ESCAPE    &lt 2 ENTER  &lt 1 BACKSPACE  &kp TAB
             >;
         };
 
-        sym {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -42,7 +73,7 @@
             >;
         };
 
-        num {
+        sym {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -50,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE       &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
-&none           &kp NON_US_BACKSLASH  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
-&none           &kp TILDE             &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-                                                       &trans        &trans                &trans                   &trans  &trans    &trans
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
+&none           &kp PIPE         &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
+&none           &kp TILDE        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+                                                  &trans        &trans                &trans                   &trans  &trans    &trans
             >;
         };
 
