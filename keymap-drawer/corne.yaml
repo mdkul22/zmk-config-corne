@@ -153,7 +153,7 @@ layers:
   - DOWN
   - UP ARROW
   - RIGHT
-  - {t: ▽, type: trans}
+  - Ctl+ [
   - {t: ▽, type: trans}
   - ''
   - LCTRL
@@ -165,7 +165,7 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - END
-  - {t: ▽, type: trans}
+  - Ctl+ ]
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -193,8 +193,8 @@ layers:
   - ''
   - CLCK
   - ''
-  - ''
-  - SCREENSAVER
+  - '&screenshot'
+  - '&screen_lock'
   - MUTE
   - ''
   - ''
