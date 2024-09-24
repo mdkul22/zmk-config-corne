@@ -40,10 +40,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp N7        &kp N8        &kp N9        &kp N0       &none   &none          &none     &none      &none      &none
-&trans            &kp NON_US_BACKSLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL    &none   &none          &none     &none      &none      &none
-&trans            &kp GRAVE             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &none   &kp RIGHT_GUI  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-                                                      &trans        &trans        &trans       &trans  &trans         &trans
+&none  &kp GRAVE      &kp NUMBER_1  &kp N2  &kp N3        &kp MINUS    &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &none      &none
+&none  &kp BACKSLASH  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp EQUAL    &none   &kp RIGHT_SHIFT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &none
+&none  &none          &kp N7        &kp N8  &kp N9        &kp N0       &none   &kp RIGHT_GUI     &kp RALT              &kp RCTRL              &kp RSHFT  &none
+                                    &trans  &trans        &trans       &trans  &trans            &trans
             >;
         };
 
@@ -55,27 +55,27 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none     &none     &none      &none      &none
-&none           &kp PIPE         &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &none     &none     &none      &none      &none
-&none           &kp TILDE        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-                                                  &trans        &trans                &trans                   &trans  &trans    &trans
+&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH              &kp UNDERSCORE           &none   &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &none  &none
+&none  &kp PIPE   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &kp RSHIFT      &none            &none      &none  &none
+&none  &none      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &kp RCMD        &kp RALT         &kp RCTRL  &none  &none
+                                   &trans        &trans                &trans                   &trans  &trans          &trans
             >;
         };
 
         vimnav {
             bindings = <
-&trans  &trans     &trans     &trans    &trans    &trans    &mt LS(V) V            &kp K_UNDO      &kp K_CUT      &kp K_COPY    &kp K_PASTE  &kp K_REDO
-&trans  &trans     &trans     &trans    &trans    &trans    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp LS(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &trans
-                              &trans    &trans    &trans    &trans                 &trans          &trans
+&trans  &trans  &trans     &trans    &trans    &trans    &kp LS(V)              &kp K_UNDO      &kp K_CUT      &kp K_COPY    &kp K_PASTE  &kp K_REDO
+&trans  &trans  &trans     &trans    &trans    &trans    &kp LC(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &trans
+&trans  &none   &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp LC(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &trans
+                           &trans    &trans    &trans    &trans                 &trans          &trans
             >;
         };
 
-        misc {
+        media {
             bindings = <
-&none  &none      &none      &none     &none     &none     &to 5       &kp F9  &kp F10  &kp F11  &kp F12  &none
-&none  &none      &none      &none     &none     &none     &kp CLCK    &kp F5  &kp F6   &kp F7   &kp F8   &none
-&none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none     &kp K_MENU  &kp F1  &kp F2   &kp F3   &kp F4   &none
+&none  &none      &none      &none     &none     &none     &to 5       &none   &kp K_SCROLL_UP    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &none
+&none  &none      &none      &none     &none     &none     &kp CLCK    &none   &none              &kp K_SCREENSAVER     &kp K_MUTE       &none
+&none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none     &kp K_MENU  &none   &kp K_SCROLL_DOWN  &kp C_BRI_DEC         &kp C_VOL_DN     &none
                              &trans    &trans    &trans    &trans      &trans  &trans
             >;
         };
