@@ -148,7 +148,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&vimgrep'
-  - Ctl+ [
+  - Sft+ [
   - LEFT ARROW
   - DOWN
   - UP ARROW
@@ -160,7 +160,7 @@ layers:
   - LALT
   - LGUI
   - {t: ▽, type: trans}
-  - Ctl+ ]
+  - Sft+ ]
   - HOME
   - PAGE DOWN
   - PAGE UP
