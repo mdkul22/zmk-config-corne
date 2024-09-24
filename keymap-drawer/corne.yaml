@@ -39,41 +39,41 @@ layers:
   - '='
   - {t: Ctl+ A, h: LCTRL}
   - {t: SPACE, h: vimnav}
-  - {t: ESCAPE, h: misc}
+  - {t: ESCAPE, h: media}
   - {t: ENTER, h: sym}
   - {t: BACKSPACE, h: num}
   - TAB
   num:
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - ''
   - '['
   - ']'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
   - \
   - '4'
   - '5'
   - '6'
   - '='
   - ''
+  - RIGHT SHIFT
+  - (
+  - )
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - {t: ▽, type: trans}
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '-'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - ''
   - RIGHT GUI
   - RALT
@@ -87,15 +87,15 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   sym:
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - _
+  - ''
   - '{'
   - '}'
-  - '&'
-  - '*'
-  - (
-  - )
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -106,22 +106,22 @@ layers:
   - ^
   - +
   - ''
+  - RSHIFT
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - _
+  - '&'
+  - '*'
+  - (
+  - )
   - ''
   - RCMD
   - RALT
   - RCTRL
-  - RSHFT
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -136,7 +136,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: V, h: Sft+ V}
+  - Sft+ V
   - UNDO
   - CUT
   - COPY
@@ -148,19 +148,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ [
+  - Ctl+ [
   - LEFT ARROW
   - DOWN
   - UP ARROW
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHFT
+  - ''
   - LCTRL
   - LALT
   - LGUI
   - {t: ▽, type: trans}
-  - Sft+ ]
+  - Ctl+ ]
   - HOME
   - PAGE DOWN
   - PAGE UP
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  misc:
+  media:
   - ''
   - ''
   - ''
@@ -180,10 +180,10 @@ layers:
   - ''
   - ''
   - {t: mouse, h: toggle}
-  - F9
-  - F10
-  - F11
-  - F12
+  - ''
+  - SCROLL UP
+  - BRIGHTNESS INC
+  - VOLUME UP
   - ''
   - ''
   - ''
@@ -192,10 +192,10 @@ layers:
   - ''
   - ''
   - CLCK
-  - F5
-  - F6
-  - F7
-  - F8
+  - ''
+  - ''
+  - SCREENSAVER
+  - MUTE
   - ''
   - ''
   - LSHFT
@@ -204,10 +204,10 @@ layers:
   - LGUI
   - ''
   - MENU
-  - F1
-  - F2
-  - F3
-  - F4
+  - ''
+  - SCROLL DOWN
+  - BRI DEC
+  - VOL DN
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
