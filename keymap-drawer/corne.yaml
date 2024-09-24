@@ -140,14 +140,14 @@ layers:
   - UNDO
   - CUT
   - COPY
-  - PASTE
+  - '&vim_file_grep'
   - REDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&vimgrep'
   - Ctl+ [
   - LEFT ARROW
   - DOWN
