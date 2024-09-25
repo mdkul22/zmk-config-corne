@@ -70,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp GRAVE      &kp NUMBER_1  &kp N2  &kp N3        &kp MINUS    &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &none      &none
-&none  &kp BACKSLASH  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp EQUAL    &none   &kp RIGHT_SHIFT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &none
-&none  &none          &kp N7        &kp N8  &kp N9        &kp N0       &none   &kp RIGHT_GUI     &kp RALT              &kp RCTRL              &kp RSHFT  &none
-                                    &trans  &trans        &trans       &trans  &trans            &trans
+&kp TILDE        &kp BACKSLASH          &kp N7        &kp N8  &kp N9        &kp N0       &none   &kp Y           &kp D           &none         &none            &none
+&kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp EQUAL    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp N1        &kp N2  &kp N3        &kp MINUS    &none   &kp RIGHT_GUI   &kp RALT        &kp RCTRL     &kp RSHFT        &none
+                                                      &trans  &trans        &trans       &trans  &trans          &trans
             >;
         };
 
@@ -85,19 +85,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH              &kp UNDERSCORE           &none   &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &none  &none
-&none  &kp PIPE   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &kp RSHIFT      &none            &none      &none  &none
-&none  &none      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &kp RCMD        &kp RALT         &kp RCTRL  &none  &none
-                                   &trans        &trans                &trans                   &trans  &trans          &trans
+&none  &kp PIPE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none   &none       &none     &none      &none  &none
+&none  &none     &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                 &none   &kp RSHIFT  &none     &none      &none  &none
+&none  &none     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &none   &kp RCMD    &kp RALT  &kp RCTRL  &none  &none
+                                  &trans        &trans                &trans                   &trans  &trans      &trans
             >;
         };
 
         vimnav {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans      &kp LS(V)              &kp K_UNDO      &kp K_CUT      &kp K_COPY    &vim_file_grep  &kp K_REDO
-&trans  &trans  &trans     &trans    &trans    &vimgrep    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT       &kp LC(LEFT_BRACKET)
-&trans  &none   &kp LCTRL  &kp LALT  &kp LGUI  &trans      &kp LS(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END         &kp LC(RIGHT_BRACKET)
-                           &trans    &trans    &trans      &trans                 &trans          &trans
+&trans  &trans  &trans     &trans    &trans     &trans      &kp LS(V)              &kp K_UNDO      &kp LC(T)      &kp LC(RIGHT_BRACKET)  &vim_file_grep  &none
+&trans  &trans  &trans     &trans    &kp LSHFT  &vimgrep    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW           &kp RIGHT       &none
+&trans  &none   &kp LCTRL  &kp LALT  &kp LGUI   &trans      &kp LS(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP            &kp END         &none
+                           &trans    &trans     &trans      &trans                 &trans          &trans
             >;
         };
 
