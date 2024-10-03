@@ -42,6 +42,14 @@
             bindings = <&kp LC(LG(Q))>;
             label = "SCREEN_LOCK";
         };
+
+        tmux_select_mode: tmux_select_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LEFT_BRACKET>;
+            label = "TMUX_SELECT_MODE";
+            wait-ms = <0>;
+        };
     };
 
     keymap {
@@ -57,7 +65,7 @@
             bindings = <
 &kp GRAVE                 &kp Q  &kp W        &kp E            &kp R             &kp T           &kp Y        &kp U              &kp I           &kp O             &kp P      &kp MINUS
 &kp LEFT_BRACKET          &kp A  &kp S        &kp D            &mt LEFT_SHIFT F  &kp G           &kp H        &mt RIGHT_SHIFT J  &kp K           &kp L             &kp SEMI   &kp SQT
-&mt RIGHT_BRACKET LSHIFT  &kp Z  &mt LCTRL X  &mt LALT C       &mt LGUI V        &kp B           &kp N        &mt RGUI M         &mt RALT COMMA  &mt RCTRL PERIOD  &kp SLASH  &mt EQUAL RSHFT
+&mt RIGHT_BRACKET LSHIFT  &kp Z  &mt LCTRL X  &mt LALT C       &kp V             &mt LCMD B      &mt RCMD N   &kp M              &mt RALT COMMA  &mt RCTRL PERIOD  &kp SLASH  &mt EQUAL RSHFT
                                               &mt LCTRL LC(A)  &lt 3 SPACE       &lt 4 ESCAPE    &lt 2 ENTER  &lt 1 BACKSPACE    &kp TAB
             >;
         };
@@ -94,10 +102,10 @@
 
         vimnav {
             bindings = <
-&trans  &trans  &trans     &trans    &trans     &trans      &kp LS(V)              &kp K_UNDO      &kp LC(T)      &kp LC(RIGHT_BRACKET)  &vim_file_grep  &none
-&trans  &trans  &trans     &trans    &kp LSHFT  &vimgrep    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW           &kp RIGHT       &none
-&trans  &none   &kp LCTRL  &kp LALT  &kp LGUI   &trans      &kp LS(RIGHT_BRACKET)  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP            &kp END         &none
-                           &trans    &trans     &trans      &trans                 &trans          &trans
+&trans  &trans  &trans     &trans    &trans     &trans      &kp LS(V)              &tmux_select_mode  &kp LC(T)      &kp LC(RIGHT_BRACKET)  &vim_file_grep  &none
+&trans  &trans  &trans     &trans    &kp LSHFT  &vimgrep    &kp LS(LEFT_BRACKET)   &kp LEFT_ARROW     &kp DOWN       &kp UP_ARROW           &kp RIGHT       &none
+&trans  &none   &kp LCTRL  &kp LALT  &kp LGUI   &trans      &kp LS(RIGHT_BRACKET)  &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP            &kp END         &none
+                           &trans    &trans     &trans      &trans                 &trans             &trans
             >;
         };
 
