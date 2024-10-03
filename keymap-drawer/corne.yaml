@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: LSHIFT, h: ']'}
+  - {t: ']', h: LSHIFT}
   - Z
   - {t: X, h: LCTRL}
   - {t: C, h: LALT}
@@ -36,7 +36,7 @@ layers:
   - {t: ',', h: RALT}
   - {t: ., h: RCTRL}
   - /
-  - {t: RSHFT, h: '='}
+  - {t: '=', h: RSHIFT}
   - {t: Ctl+ A, h: LCTRL}
   - {t: SPACE, h: vimnav}
   - {t: ESCAPE, h: media}
