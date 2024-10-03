@@ -65,7 +65,7 @@
             bindings = <
 &kp GRAVE                 &kp Q  &kp W        &kp E            &kp R             &kp T           &kp Y        &kp U              &kp I           &kp O             &kp P      &kp MINUS
 &kp LEFT_BRACKET          &kp A  &kp S        &kp D            &mt LEFT_SHIFT F  &kp G           &kp H        &mt RIGHT_SHIFT J  &kp K           &kp L             &kp SEMI   &kp SQT
-&mt RIGHT_BRACKET LSHIFT  &kp Z  &mt LCTRL X  &mt LALT C       &kp V             &mt LCMD B      &mt RCMD N   &kp M              &mt RALT COMMA  &mt RCTRL PERIOD  &kp SLASH  &mt EQUAL RSHFT
+&mt LSHIFT RIGHT_BRACKET  &kp Z  &mt LCTRL X  &mt LALT C       &kp V             &mt LCMD B      &mt RCMD N   &kp M              &mt RALT COMMA  &mt RCTRL PERIOD  &kp SLASH  &mt RSHIFT EQUAL
                                               &mt LCTRL LC(A)  &lt 3 SPACE       &lt 4 ESCAPE    &lt 2 ENTER  &lt 1 BACKSPACE    &kp TAB
             >;
         };
