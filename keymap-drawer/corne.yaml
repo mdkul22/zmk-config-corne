@@ -29,10 +29,10 @@ layers:
   - Z
   - {t: X, h: LCTRL}
   - {t: C, h: LALT}
-  - {t: V, h: LGUI}
-  - B
-  - N
-  - {t: M, h: RGUI}
+  - V
+  - {t: B, h: LCMD}
+  - {t: N, h: RCMD}
+  - M
   - {t: ',', h: RALT}
   - {t: ., h: RCTRL}
   - /
@@ -137,7 +137,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+ V
-  - UNDO
+  - '&tmux_select_mode'
   - Ctl+ T
   - Ctl+ ]
   - '&vim_file_grep'
