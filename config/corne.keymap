@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mt {
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <250>;
 };
 
