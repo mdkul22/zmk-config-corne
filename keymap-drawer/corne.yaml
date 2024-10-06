@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - '['
+  - {t: '[', h: LEFT SHIFT}
   - A
   - S
   - D
@@ -24,19 +24,19 @@ layers:
   - K
   - L
   - ;
-  - ''''
-  - {t: ']', h: LSHIFT}
+  - {t: '''', h: RSHIFT}
+  - {t: ']', h: LCTRL}
   - Z
-  - {t: X, h: LCTRL}
+  - X
   - {t: C, h: LALT}
   - V
   - {t: B, h: LCMD}
   - {t: N, h: RCMD}
   - M
   - {t: ',', h: RALT}
-  - {t: ., h: RCTRL}
+  - .
   - /
-  - {t: '=', h: RSHIFT}
+  - {t: '=', h: RCTRL}
   - {t: Ctl+ A, h: LCTRL}
   - {t: SPACE, h: vimnav}
   - {t: ESCAPE, h: media}
@@ -62,24 +62,24 @@ layers:
   - '5'
   - '6'
   - '='
-  - ''
-  - LEFT ARROW
-  - DOWN ARROW
+  - LEFT
+  - DOWN
   - UP ARROW
-  - RIGHT ARROW
+  - RIGHT
   - ''
+  - RSHFT
   - '}'
   - )
   - '1'
   - '2'
   - '3'
   - '-'
+  - RGUI
   - ''
-  - RIGHT GUI
   - RALT
-  - RCTRL
-  - RSHFT
   - ''
+  - ''
+  - RCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -110,19 +110,19 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - RSHFT
   - ''
   - ''
   - '!'
   - '@'
   - '#'
   - _
+  - RGUI
   - ''
-  - RCMD
   - RALT
+  - ''
+  - ''
   - RCTRL
-  - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -137,34 +137,34 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+ V
-  - '&tmux_select_mode'
-  - Ctl+ T
   - Ctl+ ]
+  - Ctl+ T
+  - '&tmux_select_mode'
   - '&vim_file_grep'
   - ''
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LSHFT
+  - LSHIFT
   - '&vimgrep'
-  - Sft+ [
   - LEFT ARROW
-  - DOWN
+  - DOWN ARROW
   - UP ARROW
-  - RIGHT
-  - ''
-  - {t: ▽, type: trans}
+  - RIGHT ARROW
+  - Sft+ [
   - ''
   - LCTRL
+  - ''
+  - ''
   - LALT
+  - ''
   - LGUI
-  - {t: ▽, type: trans}
-  - Sft+ ]
   - HOME
   - PAGE DOWN
   - PAGE UP
   - END
+  - Sft+ ]
   - ''
   - {t: ▽, type: trans}
   - {type: held}
@@ -181,7 +181,7 @@ layers:
   - ''
   - {t: mouse, h: toggle}
   - ''
-  - SCROLL UP
+  - ''
   - BRIGHTNESS INC
   - VOLUME UP
   - ''
@@ -198,14 +198,14 @@ layers:
   - MUTE
   - ''
   - ''
-  - LSHFT
-  - LCTRL
-  - LALT
-  - LGUI
   - ''
-  - MENU
   - ''
-  - SCROLL DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - BRI DEC
   - VOL DN
   - ''
