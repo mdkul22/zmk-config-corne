@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: RSHIFT}
+  - ''''
   - {t: ']', h: LCTRL}
   - Z
   - X
