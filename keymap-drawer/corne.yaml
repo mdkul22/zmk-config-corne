@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - '['
+  - (
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: ']', h: LSHIFT}
+  - {t: ), h: LSHIFT}
   - {t: Z, h: RCTRL}
   - X
   - {t: C, h: LALT}
@@ -44,7 +44,7 @@ layers:
   - {t: BACKSPACE, h: num}
   - TAB
   num:
-  - {t: ▽, type: trans}
+  - CAPS
   - ''
   - '7'
   - '8'
@@ -56,8 +56,8 @@ layers:
   - (
   - )
   - ''
-  - {t: ▽, type: trans}
-  - ''
+  - '['
+  - ']'
   - '4'
   - '5'
   - '6'
