@@ -6,14 +6,14 @@ layers:
   - W
   - E
   - R
-  - T
-  - Y
+  - {t: T, h: '['}
+  - {t: Y, h: ']'}
   - U
   - I
   - O
   - P
   - '-'
-  - {t: '[', h: LEFT SHIFT}
+  - '['
   - A
   - S
   - D
@@ -25,8 +25,8 @@ layers:
   - L
   - ;
   - ''''
-  - {t: ']', h: LCTRL}
-  - Z
+  - {t: ']', h: LSHIFT}
+  - {t: Z, h: RCTRL}
   - X
   - {t: C, h: LALT}
   - V
@@ -36,117 +36,74 @@ layers:
   - {t: ',', h: RALT}
   - .
   - /
-  - {t: '=', h: RCTRL}
+  - '='
   - {t: Ctl+ A, h: LCTRL}
-  - {t: SPACE, h: vimnav}
-  - {t: ESCAPE, h: media}
-  - {t: ENTER, h: sym}
+  - {t: SPACE, h: num}
+  - {t: ESCAPE, h: vimnav}
+  - {t: ENTER, h: vimnav}
   - {t: BACKSPACE, h: num}
   - TAB
   num:
-  - '~'
-  - \
+  - {t: ▽, type: trans}
+  - ''
   - '7'
   - '8'
   - '9'
   - '0'
   - ''
-  - Y
-  - D
-  - ''
-  - ''
-  - ''
-  - '{'
-  - (
-  - '4'
-  - '5'
-  - '6'
-  - '='
-  - LEFT
-  - DOWN
-  - UP ARROW
-  - RIGHT
-  - ''
-  - RSHFT
-  - '}'
-  - )
-  - '1'
-  - '2'
-  - '3'
-  - '-'
-  - RGUI
-  - ''
-  - RALT
-  - ''
-  - ''
-  - RCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  sym:
-  - ''
-  - '|'
   - '&'
   - '*'
   - (
   - )
   - ''
+  - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - +
   - $
   - '%'
   - ^
-  - +
-  - ''
-  - RSHIFT
   - ''
   - ''
-  - ''
-  - RSHFT
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - \
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - _
   - '!'
   - '@'
   - '#'
-  - _
-  - RGUI
+  - '|'
   - ''
-  - RALT
-  - ''
-  - ''
-  - RCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   vimnav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+ V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Ctl+ ]
   - Ctl+ T
-  - '&tmux_select_mode'
+  - '&vimgrep'
   - '&vim_file_grep'
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LSHIFT
   - '&vimgrep'
   - LEFT ARROW
   - DOWN ARROW
@@ -154,12 +111,12 @@ layers:
   - RIGHT ARROW
   - Sft+ [
   - ''
-  - LCTRL
   - ''
   - ''
-  - LALT
   - ''
-  - LGUI
+  - ''
+  - ''
+  - ''
   - HOME
   - PAGE DOWN
   - PAGE UP
@@ -167,94 +124,8 @@ layers:
   - Sft+ ]
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  media:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: mouse, h: toggle}
-  - ''
-  - ''
-  - BRIGHTNESS INC
-  - VOLUME UP
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - CLCK
-  - ''
-  - '&screenshot'
-  - '&screen_lock'
-  - MUTE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BRI DEC
-  - VOL DN
-  - ''
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: default, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
-  - ''
-  - ''
-  - ''
-  - RGUI
-  - RALT
-  - RCTRL
-  - RSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
