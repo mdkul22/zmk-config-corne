@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  default:
+  main:
   - '`'
   - Q
   - W
@@ -35,15 +35,15 @@ layers:
   - M
   - {t: ',', h: RALT}
   - .
-  - /
+  - {t: /, h: RCTRL}
   - '='
   - {t: Ctl+ A, h: LCTRL}
-  - {t: SPACE, h: num}
+  - {t: SPACE, h: numsym}
   - {t: ESCAPE, h: vimnav}
   - {t: ENTER, h: vimnav}
-  - {t: BACKSPACE, h: num}
+  - {t: BACKSPACE, h: numsym}
   - TAB
-  num:
+  numsym:
   - CAPS
   - ''
   - '7'
@@ -68,7 +68,7 @@ layers:
   - ^
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {t: Gui+Sft+ C, h: Alt+Gui+Sft+ C}
   - \
   - '1'
   - '2'
