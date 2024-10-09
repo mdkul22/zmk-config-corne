@@ -63,22 +63,22 @@ layers:
   - '6'
   - '='
   - +
-  - $
+  - {t: $, h: RIGHT SHIFT}
   - '%'
   - ^
   - ''
   - ''
   - {t: Gui+Sft+ C, h: Alt+Gui+Sft+ C}
-  - \
+  - '|'
   - '1'
   - '2'
   - '3'
   - '-'
-  - _
+  - {t: _, h: RGUI}
   - '!'
   - '@'
   - '#'
-  - '|'
+  - \
   - ''
   - {t: ▽, type: trans}
   - {type: held}
