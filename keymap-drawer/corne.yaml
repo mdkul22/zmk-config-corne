@@ -129,3 +129,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  graphite:
+  - '`'
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - ''''
+  - F
+  - O
+  - U
+  - J
+  - ;
+  - (
+  - N
+  - R
+  - T
+  - {t: S, h: LSHIFT}
+  - G
+  - Y
+  - {t: H, h: RSHIFT}
+  - A
+  - E
+  - I
+  - ','
+  - {t: ), h: LSHIFT}
+  - Q
+  - X
+  - M
+  - C
+  - V
+  - K
+  - P
+  - .
+  - '-'
+  - /
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [38, 39]
+  k: {t: graphite, h: toggle}
