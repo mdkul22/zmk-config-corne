@@ -73,6 +73,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        graphite_toggle {
+            bindings = <&tog 3>;
+            key-positions = <38 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,6 +121,15 @@
 &none  &none      &none  &screenshot       &kp LEFT_SHIFT  &vimgrep    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
 &none  &kp LCTRL  &none  &none             &none           &none       &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
                          &trans            &trans          &trans      &trans          &trans                 &trans
+            >;
+        };
+
+        graphite {
+            bindings = <
+&kp GRAVE                         &kp B  &kp L  &kp D   &kp W             &kp Z     &kp SQT  &kp F             &kp O    &kp U      &kp J     &kp SEMI
+&kp LEFT_PARENTHESIS              &kp N  &kp R  &kp T   &lshift LSHIFT S  &kp G     &kp Y    &rshift RSHIFT H  &kp A    &kp E      &kp I     &kp COMMA
+&lshift LSHIFT RIGHT_PARENTHESIS  &kp Q  &kp X  &kp M   &kp C             &kp V     &kp K    &kp P             &kp DOT  &kp MINUS  &kp FSLH  &kp EQUAL
+                                                &trans  &trans            &trans    &trans   &trans            &trans
             >;
         };
     };
