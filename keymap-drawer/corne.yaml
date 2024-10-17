@@ -90,7 +90,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Ctl+ UP ARROW
   - ''
   - ''
   - ''
@@ -102,7 +102,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&screenshot'
   - LEFT SHIFT
   - '&vimgrep'
   - LEFT ARROW
@@ -112,7 +112,7 @@ layers:
   - Sft+ [
   - ''
   - ''
-  - ''
+  - LCTRL
   - ''
   - ''
   - ''
