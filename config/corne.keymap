@@ -108,10 +108,10 @@
 
         vimnav {
             bindings = <
-&none  &none  &none  &none   &none           &none       &none           &kp LC(RIGHT_BRACKET)  &kp LC(T)     &vimgrep         &vim_file_grep         &none
-&none  &none  &none  &none   &kp LEFT_SHIFT  &vimgrep    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
-&none  &none  &none  &none   &none           &none       &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
-                     &trans  &trans          &trans      &trans          &trans                 &trans
+&none  &none      &none  &kp LC(UP_ARROW)  &none           &none       &none           &kp LC(RIGHT_BRACKET)  &kp LC(T)     &vimgrep         &vim_file_grep         &none
+&none  &none      &none  &screenshot       &kp LEFT_SHIFT  &vimgrep    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
+&none  &kp LCTRL  &none  &none             &none           &none       &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
+                         &trans            &trans          &trans      &trans          &trans                 &trans
             >;
         };
     };
