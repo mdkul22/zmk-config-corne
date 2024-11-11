@@ -1,19 +1,19 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  default:
+  main:
   - '`'
   - Q
   - W
   - E
   - R
-  - T
-  - Y
+  - {t: T, h: '['}
+  - {t: Y, h: ']'}
   - U
   - I
   - O
   - P
   - '-'
-  - '['
+  - (
   - A
   - S
   - D
@@ -25,189 +25,103 @@ layers:
   - L
   - ;
   - ''''
-  - ']'
-  - Z
-  - {t: X, h: LCTRL}
+  - {t: ), h: LSHIFT}
+  - {t: Z, h: RCTRL}
+  - X
   - {t: C, h: LALT}
-  - {t: V, h: LGUI}
-  - B
-  - N
-  - {t: M, h: RGUI}
+  - V
+  - {t: B, h: LCMD}
+  - {t: N, h: RCMD}
+  - M
   - {t: ',', h: RALT}
-  - {t: ., h: RCTRL}
-  - /
+  - .
+  - {t: /, h: RCTRL}
   - '='
   - {t: Ctl+ A, h: LCTRL}
-  - {t: SPACE, h: vimnav}
-  - {t: ESCAPE, h: media}
-  - {t: ENTER, h: sym}
-  - {t: BACKSPACE, h: num}
+  - {t: SPACE, h: numsym}
+  - {t: ESCAPE, h: vimnav}
+  - {t: ENTER, h: vimnav}
+  - {t: BACKSPACE, h: numsym}
   - TAB
-  num:
-  - ''
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '-'
-  - ''
-  - '['
-  - ']'
-  - ''
-  - ''
-  - ''
-  - ''
-  - \
-  - '4'
-  - '5'
-  - '6'
-  - '='
-  - ''
-  - RIGHT SHIFT
-  - (
-  - )
-  - ''
-  - ''
-  - ''
+  numsym:
+  - CAPS
   - ''
   - '7'
   - '8'
   - '9'
   - '0'
   - ''
-  - RIGHT GUI
-  - RALT
-  - RCTRL
-  - RSHFT
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  sym:
-  - ''
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - _
-  - ''
-  - '{'
-  - '}'
-  - ''
-  - ''
-  - ''
-  - ''
-  - '|'
-  - $
-  - '%'
-  - ^
-  - +
-  - ''
-  - RSHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - '&'
   - '*'
   - (
   - )
   - ''
-  - RCMD
-  - RALT
-  - RCTRL
+  - '['
+  - ']'
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - +
+  - {t: $, h: RIGHT SHIFT}
+  - '%'
+  - ^
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Gui+Sft+ C, h: Alt+Gui+Sft+ C}
+  - '|'
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - {t: _, h: RGUI}
+  - '!'
+  - '@'
+  - '#'
+  - \
+  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   vimnav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+ V
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - REDO
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ [
+  - ''
+  - ''
+  - ''
+  - Ctl+ UP ARROW
+  - ''
+  - ''
+  - ''
+  - Ctl+ ]
+  - Ctl+ T
+  - '&vimgrep'
+  - '&vim_file_grep'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&screenshot'
+  - LEFT SHIFT
+  - '&vimgrep'
   - LEFT ARROW
-  - DOWN
+  - DOWN ARROW
   - UP ARROW
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RIGHT ARROW
+  - Sft+ [
+  - ''
   - ''
   - LCTRL
-  - LALT
-  - LGUI
-  - {t: ▽, type: trans}
-  - Ctl+ ]
+  - ''
+  - ''
+  - ''
+  - ''
   - HOME
   - PAGE DOWN
   - PAGE UP
   - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  media:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: mouse, h: toggle}
-  - ''
-  - SCROLL UP
-  - BRIGHTNESS INC
-  - VOLUME UP
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - CLCK
-  - ''
-  - ''
-  - SCREENSAVER
-  - MUTE
-  - ''
-  - ''
-  - LSHFT
-  - LCTRL
-  - LALT
-  - LGUI
-  - ''
-  - MENU
-  - ''
-  - SCROLL DOWN
-  - BRI DEC
-  - VOL DN
+  - Sft+ ]
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,46 +129,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: default, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
-  - ''
-  - ''
-  - ''
-  - RGUI
-  - RALT
-  - RCTRL
-  - RSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  graphite:
+  - '`'
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - ''''
+  - F
+  - O
+  - U
+  - J
+  - ;
+  - (
+  - N
+  - R
+  - T
+  - {t: S, h: LSHIFT}
+  - G
+  - Y
+  - {t: H, h: RSHIFT}
+  - A
+  - E
+  - I
+  - ','
+  - {t: ), h: LSHIFT}
+  - Q
+  - X
+  - M
+  - C
+  - V
+  - K
+  - P
+  - .
+  - '-'
+  - /
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [38, 39]
+  k: {t: graphite, h: toggle}
