@@ -101,7 +101,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - F5
   - '&screenshot'
   - LEFT SHIFT
   - '&vimgrep'
