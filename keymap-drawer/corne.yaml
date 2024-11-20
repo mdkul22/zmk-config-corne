@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: ), h: LSHIFT}
+  - LSHIFT
   - {t: Z, h: RCTRL}
   - X
   - {t: C, h: LALT}
@@ -63,11 +63,11 @@ layers:
   - '6'
   - '='
   - +
-  - {t: $, h: RIGHT SHIFT}
+  - RIGHT SHIFT
   - '%'
   - ^
-  - ''
-  - ''
+  - '{'
+  - '}'
   - {t: Gui+Sft+ C, h: Alt+Gui+Sft+ C}
   - '|'
   - '1'
