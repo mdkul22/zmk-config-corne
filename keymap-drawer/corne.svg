@@ -309,12 +309,14 @@ path.combo {
 <text x="0" y="0" class="key tap">TAB</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<path d="M420,219 l-50,4" class="combo"/>
+<path d="M420,219 l50,4" class="combo"/>
+<path d="M420,219 l116,-5" class="combo"/>
+<path d="M420,219 l-116,-5" class="combo"/>
+<rect rx="6" ry="6" x="406" y="206" width="28" height="26" class="combo"/>
 <a href="#graphite">
-<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
-</a><text x="420" y="235" class="combo hold">toggle</text>
+<text x="420" y="219" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
+</a><text x="420" y="230" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -484,12 +486,14 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<path d="M420,219 l-50,4" class="combo"/>
+<path d="M420,219 l50,4" class="combo"/>
+<path d="M420,219 l116,-5" class="combo"/>
+<path d="M420,219 l-116,-5" class="combo"/>
+<rect rx="6" ry="6" x="406" y="206" width="28" height="26" class="combo"/>
 <a href="#graphite">
-<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
-</a><text x="420" y="235" class="combo hold">toggle</text>
+<text x="420" y="219" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
+</a><text x="420" y="230" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -677,12 +681,14 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<path d="M420,219 l-50,4" class="combo"/>
+<path d="M420,219 l50,4" class="combo"/>
+<path d="M420,219 l116,-5" class="combo"/>
+<path d="M420,219 l-116,-5" class="combo"/>
+<rect rx="6" ry="6" x="406" y="206" width="28" height="26" class="combo"/>
 <a href="#graphite">
-<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
-</a><text x="420" y="235" class="combo hold">toggle</text>
+<text x="420" y="219" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
+</a><text x="420" y="230" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -861,12 +867,14 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<path d="M420,219 l-50,4" class="combo"/>
+<path d="M420,219 l50,4" class="combo"/>
+<path d="M420,219 l116,-5" class="combo"/>
+<path d="M420,219 l-116,-5" class="combo"/>
+<rect rx="6" ry="6" x="406" y="206" width="28" height="26" class="combo"/>
 <a href="#graphite">
-<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
-</a><text x="420" y="235" class="combo hold">toggle</text>
+<text x="420" y="219" class="combo tap layer-activator"><tspan style="font-size: 88%">graphite</tspan></text>
+</a><text x="420" y="230" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

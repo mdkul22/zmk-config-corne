@@ -173,5 +173,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [38, 39]
+- p: [38, 39, 40, 37]
   k: {t: graphite, h: toggle}
