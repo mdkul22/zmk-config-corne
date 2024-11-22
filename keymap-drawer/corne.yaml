@@ -103,7 +103,7 @@ layers:
   - ''
   - F5
   - '&screenshot'
-  - ''
+  - '&emoji'
   - '&vimgrep'
   - LEFT ARROW
   - DOWN ARROW
