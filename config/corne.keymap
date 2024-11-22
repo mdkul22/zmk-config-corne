@@ -50,6 +50,13 @@
             label = "TMUX_SELECT_MODE";
             wait-ms = <0>;
         };
+
+        emoji: emoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(SPACE))>;
+            label = "EMOJI";
+        };
     };
 
     behaviors {
@@ -120,7 +127,7 @@
         navctrl {
             bindings = <
 &bt BT_NXT  &none  &none   &kp LC(UP_ARROW)  &none   &none       &none           &kp LC(RIGHT_BRACKET)  &kp LC(T)     &vimgrep         &vim_file_grep         &none
-&bt BT_CLR  &none  &kp F5  &screenshot       &none   &vimgrep    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
+&bt BT_CLR  &none  &kp F5  &screenshot       &emoji  &vimgrep    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
 &bt BT_PRV  &none  &none   &none             &none   &none       &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
                            &trans            &trans  &trans      &trans          &trans                 &trans
             >;
