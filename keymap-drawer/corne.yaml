@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   main:
   - '`'
@@ -89,9 +89,9 @@ layers:
   navctrl:
   - BT NXT
   - ''
-  - ''
+  - Ctl+ LEFT
   - Ctl+ UP ARROW
-  - ''
+  - Ctl+ RIGHT
   - ''
   - ''
   - Ctl+ ]
@@ -112,7 +112,7 @@ layers:
   - Sft+ [
   - ''
   - BT PRV
-  - ''
+  - LCTRL
   - ''
   - ''
   - ''
