@@ -88,23 +88,23 @@ layers:
   - {t: ▽, type: trans}
   navctrl:
   - BT NXT
-  - ''
+  - '&screen_lock'
   - Ctl+ LEFT
   - Ctl+ UP ARROW
+  - Ctl+ DOWN
   - Ctl+ RIGHT
-  - ''
   - ''
   - Ctl+ ]
   - Ctl+ T
   - '&vimgrep'
   - '&vim_file_grep'
-  - ''
-  - BT CLR
-  - ''
-  - F5
-  - '&screenshot'
   - '&emoji'
-  - '&vimgrep'
+  - BT CLR
+  - '&screenshot'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
@@ -113,10 +113,10 @@ layers:
   - ''
   - BT PRV
   - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
+  - '&mkp RCLK'
   - HOME
   - PAGE DOWN
   - PAGE UP
