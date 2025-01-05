@@ -130,10 +130,10 @@
 
         navctrl {
             bindings = <
-&bt BT_NXT  &screen_lock  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp LC(RIGHT)    &vimgrep        &kp LC(RIGHT_BRACKET)  &kp LC(T)     &vim_file_grep   &none                  &none
-&bt BT_CLR  &screenshot   &none         &none             &kp LEFT_SHIFT  &none            &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
-&bt BT_PRV  &kp LCTRL     &none         &kp LEFT_ALT      &none           &kp LEFT_GUI     &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
-                                        &trans            &trans          &trans           &trans          &trans                 &trans
+&bt BT_NXT  &emoji       &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp LC(RIGHT)    &vimgrep        &kp LC(RIGHT_BRACKET)  &kp LC(T)     &vim_file_grep   &none                  &none
+&bt BT_CLR  &screenshot  &none         &none             &kp LEFT_SHIFT  &none            &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LEFT_BRACKET)   &none
+&bt BT_PRV  &kp LCTRL    &none         &kp LEFT_ALT      &none           &kp LEFT_GUI     &kp HOME        &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp LS(RIGHT_BRACKET)  &none
+                                       &trans            &trans          &trans           &trans          &trans                 &trans
             >;
         };
 
