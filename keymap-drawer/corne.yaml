@@ -88,7 +88,7 @@ layers:
   - {t: ▽, type: trans}
   navctrl:
   - BT NXT
-  - '&screen_lock'
+  - '&emoji'
   - Ctl+ LEFT
   - Ctl+ UP ARROW
   - Ctl+ DOWN
