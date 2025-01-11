@@ -37,7 +37,7 @@ layers:
   - .
   - {t: /, h: RCTRL}
   - '='
-  - {t: Ctl+ A, h: LCTRL}
+  - {t: Ctl+A, h: LCTRL}
   - {t: SPACE, h: numsym}
   - {t: ESCAPE, h: navctrl}
   - {t: ENTER, h: navctrl}
@@ -88,28 +88,28 @@ layers:
   - {t: ▽, type: trans}
   navctrl:
   - BT NXT
-  - '&emoji'
-  - Ctl+ LEFT
-  - Ctl+ UP ARROW
-  - Ctl+ DOWN
-  - Ctl+ RIGHT
+  - '&screen_lock'
+  - Ctl+LEFT
+  - Ctl+UP ARROW
+  - Ctl+DOWN
+  - Ctl+RIGHT
   - '&vimgrep'
-  - Ctl+ ]
-  - Ctl+ T
+  - Ctl+]
+  - Ctl+T
   - '&vim_file_grep'
   - ''
   - ''
   - BT CLR
   - '&screenshot'
-  - ''
-  - ''
+  - '&emoji'
+  - GLOBE
   - LEFT SHIFT
   - ''
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - Sft+ [
+  - Sft+[
   - ''
   - BT PRV
   - LCTRL
@@ -121,7 +121,7 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - END
-  - Sft+ ]
+  - Sft+]
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -173,5 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [36, 41]
+- p: [39, 38]
   k: {t: mouse, h: toggle}
+- p: [0, 11, 5, 6]
+  k: '&soft_off'
