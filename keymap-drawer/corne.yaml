@@ -98,7 +98,7 @@ layers:
   - Ctl+T
   - '&vim_file_grep'
   - ''
-  - ''
+  - '&soft_off'
   - BT CLR
   - '&screenshot'
   - '&emoji'
