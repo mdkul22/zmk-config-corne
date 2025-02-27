@@ -90,8 +90,8 @@ layers:
   - BT NXT
   - '&screen_lock'
   - Ctl+LEFT
-  - Ctl+UP ARROW
   - Ctl+DOWN
+  - Ctl+UP ARROW
   - Ctl+RIGHT
   - '&vimgrep'
   - Ctl+]
