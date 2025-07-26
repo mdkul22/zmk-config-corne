@@ -18,7 +18,21 @@
 #
 ---
 include:
+  # OLED build
   - board: nice_nano_v2
-    shield: corne_left #nice_view_adapter nice_view 
+    shield: corne_left
+    cmake-args: -DZMK_CONFIG=config/oled
+    artifact-name: corne_left_oled
   - board: nice_nano_v2
-    shield: corne_right #nice_view_adapter nice_view
+    shield: corne_right
+    cmake-args: -DZMK_CONFIG=config/oled
+    artifact-name: corne_right_oled
+  # E-INK build using the nice view adapter
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view
+    cmake-args: -DZMK_CONFIG=config/eink
+    artifact-name: corne_left_eink
+  - board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view
+    cmake-args: -DZMK_CONFIG=config/eink
+    artifact-name: corne_right_eink
