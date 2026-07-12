@@ -26,9 +26,17 @@ include:
     artifact-name: corne_oled_right
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_WIDGET_BATTERY_STATUS=n
+    cmake-args: >-
+      -DCONFIG_ZMK_WIDGET_BATTERY_STATUS=n
+      -DCONFIG_ZMK_WIDGET_OUTPUT_STATUS=n
+      -DCONFIG_ZMK_WIDGET_LAYER_STATUS=n
+      -DCONFIG_ZMK_WIDGET_WPM_STATUS=n
     artifact-name: corne_nice_view_left
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_WIDGET_BATTERY_STATUS=n
+    cmake-args: >-
+      -DCONFIG_ZMK_WIDGET_BATTERY_STATUS=n
+      -DCONFIG_ZMK_WIDGET_OUTPUT_STATUS=n
+      -DCONFIG_ZMK_WIDGET_LAYER_STATUS=n
+      -DCONFIG_ZMK_WIDGET_WPM_STATUS=n
     artifact-name: corne_nice_view_right
